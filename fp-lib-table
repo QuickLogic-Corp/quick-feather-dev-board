@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name quicklogic-quick-feather-board-footprints)(type KiCad)(uri ${KIPRJMOD}/lib/quicklogic-quick-feather-board-footprints)(options "")(descr ""))
+)
