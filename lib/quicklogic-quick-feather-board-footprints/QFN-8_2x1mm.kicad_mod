@@ -1,4 +1,4 @@
-(module QFN-8_2x1mm (layer F.Cu) (tedit 5DC1A3A6)
+(module QFN-8_2x1mm (layer F.Cu) (tedit 5E15F92F)
   (descr "DFN8 2x2, 0.5P; No exposed pad - Ref http://pdfserv.maximintegrated.com/land_patterns/90-0349.PDF")
   (tags "DFN 0.5")
   (attr smd)
@@ -22,6 +22,7 @@
   (fp_line (start -1.65 1.35) (end 1.65 1.35) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.65 1.15) (end 0.65 1.15) (layer F.SilkS) (width 0.12))
   (fp_line (start -0.875 -1.15) (end 1.025 -1.15) (layer F.SilkS) (width 0.12))
+  (fp_circle (center -1.5 -1) (end -1.35 -1) (layer F.SilkS) (width 0.1))
   (pad 1 smd rect (at -0.675 -0.75) (size 0.55 0.25) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -0.675 -0.25) (size 0.55 0.25) (layers F.Cu F.Paste F.Mask))
   (pad 3 smd rect (at -0.675 0.25) (size 0.55 0.25) (layers F.Cu F.Paste F.Mask))

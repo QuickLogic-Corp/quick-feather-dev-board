@@ -269,6 +269,24 @@ X ~ 9 0 -550 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# 61300211121
+#
+DEF 61300211121 J 0 40 Y Y 1 F N
+F0 "J" -100 50 50 H V R CNN
+F1 "61300211121" 50 -150 50 H V C CNN
+F2 "quicklogic-quick-feather-board-footprints:PinHeader_1x2_P2.54_Drill0.9mm" 200 200 60 H I L CNN
+F3 "" 200 300 60 H I L CNN
+F4 "61300211121" 200 500 60 H I L CNN "MPN"
+F5 "Wurth Electronic" 200 1100 60 H I L CNN "Manufacturer"
+DRAW
+S -50 0 150 -100 1 1 0 f
+S -10 -45 10 -65 1 1 0 F
+S 90 -45 110 -65 1 1 0 F
+X ~ 1 0 100 100 D 50 50 1 1 P
+X ~ 2 100 100 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # 825437-4
 #
 DEF 825437-4 J 0 40 Y Y 1 F N
@@ -296,10 +314,10 @@ ENDDEF
 DEF ASMB-MTB1-0A3A2 D 0 40 Y Y 1 F N
 F0 "D" 50 150 50 H V C CNN
 F1 "ASMB-MTB1-0A3A2" 300 50 50 H V C CNN
-F2 "quicklogic-quick-feather-board-footprints:LED-PLCC4_3.2x2.8mm" 1050 -350 50 H I C CNN
+F2 "quicklogic-quick-feather-board-footprints:LED-PLCC4_3.2x2.8mm_B" 1050 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "Broadcom" 200 -550 50 H I C CNN "Manufacturer"
-F5 "UHD1110-FKA" 275 -450 50 H I C CNN "MPN"
+F5 "ASMB-MTB1-0A3A2" 275 -450 50 H I C CNN "MPN"
 DRAW
 S 0 10 550 -300 0 1 0 f
 X Red 1 650 -250 100 L 50 50 1 1 I
@@ -422,7 +440,7 @@ ENDDEF
 DEF DFE201610E-R47M=P2 L 0 40 Y Y 1 F N
 F0 "L" -175 125 60 H V C CNN
 F1 "DFE201610E-R47M=P2" 175 -75 60 H V C CNN
-F2 "quicklogic-quick-feather-board-footprints:0805-res" 200 200 60 H I L CNN
+F2 "quicklogic-quick-feather-board-footprints:0806" 200 200 60 H I L CNN
 F3 "" 200 300 60 H I L CNN
 F4 "DFE201610E-R47M=P2" 200 500 60 H I L CNN "MPN"
 F5 "Murata" 200 1100 60 H I L CNN "Manufacturer"
@@ -491,6 +509,8 @@ F0 "IC" 1700 -3300 50 H V C CNN
 F1 "EOS-S3-QFN" 1550 750 50 H V C CNN
 F2 "quicklogic-quick-feather-board-footprints:QFN-64_8.5x8.5_EOS" 950 -3300 50 H I C CNN
 F3 "" 1750 -3000 50 H I C CNN
+F4 "QuickLogic" 0 0 50 H V C CNN "Manufacturer"
+F5 "EOSA1-S-PUN64" 0 0 50 H V C CNN "MPN"
 DRAW
 T 900 650 -800 50 0 0 0 "BANK A" Normal 0 C C
 T 900 650 -2650 50 0 1 0 "BANK B" Normal 0 C C
@@ -776,6 +796,7 @@ S 0 -100 650 -1050 0 1 0 f
 X DOUT_A1 1 -100 -550 100 R 50 50 1 1 I
 X SCK_SCL 10 -100 -950 100 R 50 50 1 1 I
 X DIN_SDA 2 -100 -650 100 R 50 50 1 1 I
+X NC 3 750 -600 100 L 50 50 1 1 I
 X VPP 4 750 -950 100 L 50 50 1 1 I
 X INTN 5 -100 -750 100 R 50 50 1 1 I
 X VDDIO 6 -100 -300 100 R 50 50 1 1 I
@@ -993,8 +1014,8 @@ F0 "R" -55 135 60 H V L CNN
 F1 "R_220R_0402" 0 -150 60 H I C CNN
 F2 "quicklogic-quick-feather-board-footprints:0402-res" 200 200 60 H I L CNN
 F3 "" 0 0 50 H I C CNN
-F4 "TE_CONNECTIVITY_/_NEOHM" 200 400 60 H I L CNN "Manufacturer"
-F5 "CRG0402J220R" 200 300 60 H I L CNN "MPN"
+F4 "Stackpole Electronics Inc" 200 400 60 H I L CNN "Manufacturer"
+F5 "RMCF0402JT220R" 200 300 60 H I L CNN "MPN"
 F6 "220R" 0 -100 50 H V C CNN "Val"
 DRAW
 S 100 -40 -100 40 1 1 10 N
@@ -1094,7 +1115,7 @@ ENDDEF
 DEF SD05C.TCT D 0 40 Y Y 1 F N
 F0 "D" 0 150 60 H V C CNN
 F1 "SD05C.TCT" 0 -150 60 H V C CNN
-F2 "quicklogic-quick-feather-board-footprints:SOD-323" 200 200 60 H I L CNN
+F2 "quicklogic-quick-feather-board-footprints:SOD-323-SD05" 200 200 60 H I L CNN
 F3 "" 200 300 60 H I L CNN
 F4 "Semtec" 200 600 60 H I L CNN "Manufacturer"
 F5 "SD05C.TCT" 200 500 60 H I L CNN "MPN"
@@ -1209,6 +1230,30 @@ F2 "quicklogic-quick-feather-board-footprints:mpad" 300 -125 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 X ~ 0 0 0 100 R 50 50 1 1 N
+ENDDRAW
+ENDDEF
+#
+# oshw_logo
+#
+DEF oshw_logo N 0 40 Y Y 1 F N
+F0 "N" 20 40 50 H V C CNN
+F1 "oshw_logo" 30 -150 50 H V C CNN
+F2 "quicklogic-quick-feather-board-footprints:oshw-logo" 20 -240 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 30 -40 79 0 1 1 Logo Normal 0 C C
+ENDDRAW
+ENDDEF
+#
+# ql_logo
+#
+DEF ql_logo N 0 40 Y Y 1 F N
+F0 "N" 20 40 50 H V C CNN
+F1 "ql_logo" 30 -150 50 H V C CNN
+F2 "quicklogic-quick-feather-board-footprints:LOGO" 20 -240 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 30 -40 79 0 1 1 Logo Normal 0 C C
 ENDDRAW
 ENDDEF
 #
