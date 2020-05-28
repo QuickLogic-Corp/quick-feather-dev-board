@@ -1,4 +1,5 @@
-(module PG-VLGA-8-2 (layer F.Cu) (tedit 5E7F2123)
+(module PG-VLGA-8-2 (layer F.Cu) (tedit 5EC2740D)
+  (attr smd)
   (fp_text reference REF** (at -3.5 1) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

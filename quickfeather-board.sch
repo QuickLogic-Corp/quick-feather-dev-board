@@ -369,19 +369,19 @@ Wire Wire Line
 	2900 1700 2900 1550
 Connection ~ 2900 1550
 Wire Wire Line
-	2950 2400 2550 2400
+	2950 2400 2175 2400
 $Comp
 L quickfeather-board:R_10k_0402 R6
 U 1 1 5DC687BB
-P 2550 2000
-F 0 "R6" V 2505 2070 60  0000 L CNN
-F 1 "R_10k_0402" H 2550 1850 60  0001 C CNN
-F 2 "quickfeather-board-footprints:0402-res" H 2750 2200 60  0001 L CNN
-F 3 "" H 2550 2000 50  0001 C CNN
-F 4 "VISHAY" H 2750 2400 60  0001 L CNN "Manufacturer"
-F 5 "CRCW040210K0FKEDHP" H 2750 2300 60  0001 L CNN "MPN"
-F 6 "10k" V 2603 2070 50  0000 L CNN "Val"
-	1    2550 2000
+P 2175 2000
+F 0 "R6" V 2130 2070 60  0000 L CNN
+F 1 "R_10k_0402" H 2175 1850 60  0001 C CNN
+F 2 "quickfeather-board-footprints:0402-res" H 2375 2200 60  0001 L CNN
+F 3 "" H 2175 2000 50  0001 C CNN
+F 4 "VISHAY" H 2375 2400 60  0001 L CNN "Manufacturer"
+F 5 "CRCW040210K0FKEDHP" H 2375 2300 60  0001 L CNN "MPN"
+F 6 "10k" V 2228 2070 50  0000 L CNN "Val"
+	1    2175 2000
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1458,14 +1458,14 @@ Wire Notes Line
 	11500 7800 11500 5500
 Wire Notes Line
 	11500 5500 8600 5500
-Connection ~ 2550 2400
+Connection ~ 2175 2400
 Wire Wire Line
-	2550 2150 2550 2400
+	2175 2150 2175 2400
 Wire Wire Line
-	2550 1850 2550 1550
-Connection ~ 2550 1550
+	2175 1850 2175 1550
+Connection ~ 2175 1550
 Wire Wire Line
-	2550 1550 2900 1550
+	2175 1550 2900 1550
 Text Notes 800  5100 0    91   ~ 0
 EOS S3
 Text Notes 800  7700 0    91   ~ 0
@@ -1609,12 +1609,12 @@ Wire Wire Line
 $Comp
 L quickfeather-board:+3V3 #PWR0112
 U 1 1 5DE2E29D
-P 2550 1500
-F 0 "#PWR0112" H 2550 1500 50  0001 C CNN
-F 1 "+3V3" H 2535 1623 50  0000 C CNN
-F 2 "" H 2550 1500 50  0001 C CNN
-F 3 "" H 2550 1500 50  0001 C CNN
-	1    2550 1500
+P 2175 1500
+F 0 "#PWR0112" H 2175 1500 50  0001 C CNN
+F 1 "+3V3" H 2160 1623 50  0000 C CNN
+F 2 "" H 2175 1500 50  0001 C CNN
+F 3 "" H 2175 1500 50  0001 C CNN
+	1    2175 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1890,7 +1890,7 @@ ADC0_EN
 Wire Wire Line
 	5850 5800 5850 5900
 Text Notes 6500 950  0    50   ~ 0
-FBIO_8 and FBIO_9 are bootstrap pins for HS oscillator.\nThey should be pulled-down for internal HSO
+IO_8 and IO_9 are bootstrap pins for HS oscillator.\nThey should be pulled-down for internal HSO
 $Comp
 L quickfeather-board:R_10k_0402 R15
 U 1 1 5DE36627
@@ -2158,7 +2158,7 @@ F 3 "" H 7450 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 6500 1200 0    50   ~ 0
-FBIO_19 and FPIO_20 are bootstrap\npins for SPI flash boot.\nThey must be pulled low
+IO_19 and IO_20 are bootstrap\npins for SPI flash boot.\nThey must be pulled low
 Wire Wire Line
 	9600 9000 9000 9000
 Text Notes 13900 9350 0    50   ~ 0
@@ -2412,10 +2412,10 @@ Text Label 8700 4400 0    50   ~ 0
 SYS_RST
 Text Label 5500 2050 0    50   ~ 0
 USR_BUTTON
-Text Label 2000 2400 0    50   ~ 0
+Text Label 1375 2400 0    50   ~ 0
 SYS_RST
 Wire Wire Line
-	2000 2400 2550 2400
+	1375 2400 2175 2400
 Wire Wire Line
 	5000 1650 6300 1650
 $Comp
@@ -2449,59 +2449,59 @@ $EndComp
 $Comp
 L quickfeather-board:C_4u7_0603 C16
 U 1 1 5DE0E7DC
-P 1950 1550
-F 0 "C16" H 2065 1595 60  0000 L CNN
-F 1 "C_4u7_0603" H 1950 1400 60  0001 C CNN
-F 2 "quickfeather-board-footprints:0603-cap" H 2150 1750 60  0001 L CNN
-F 3 "" H 1950 1550 50  0001 C CNN
-F 4 "TDK" H 2150 1950 60  0001 L CNN "Manufacturer"
-F 5 "C1608X5R1V475M080AC" H 2150 1850 60  0001 L CNN "MPN"
-F 6 "4u7" H 2065 1497 50  0000 L CNN "Val"
-	1    1950 1550
+P 1550 1500
+F 0 "C16" H 1665 1545 60  0000 L CNN
+F 1 "C_4u7_0603" H 1550 1350 60  0001 C CNN
+F 2 "quickfeather-board-footprints:0603-cap" H 1750 1700 60  0001 L CNN
+F 3 "" H 1550 1500 50  0001 C CNN
+F 4 "TDK" H 1750 1900 60  0001 L CNN "Manufacturer"
+F 5 "C1608X5R1V475M080AC" H 1750 1800 60  0001 L CNN "MPN"
+F 6 "4u7" H 1665 1447 50  0000 L CNN "Val"
+	1    1550 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L quickfeather-board:C_4u7_0603 C14
 U 1 1 5DE10E27
-P 1650 1550
-F 0 "C14" H 1350 1600 60  0000 L CNN
-F 1 "C_4u7_0603" H 1650 1400 60  0001 C CNN
-F 2 "quickfeather-board-footprints:0603-cap" H 1850 1750 60  0001 L CNN
-F 3 "" H 1650 1550 50  0001 C CNN
-F 4 "TDK" H 1850 1950 60  0001 L CNN "Manufacturer"
-F 5 "C1608X5R1V475M080AC" H 1850 1850 60  0001 L CNN "MPN"
-F 6 "4u7" H 1350 1500 50  0000 L CNN "Val"
-	1    1650 1550
+P 1250 1500
+F 0 "C14" H 950 1550 60  0000 L CNN
+F 1 "C_4u7_0603" H 1250 1350 60  0001 C CNN
+F 2 "quickfeather-board-footprints:0603-cap" H 1450 1700 60  0001 L CNN
+F 3 "" H 1250 1500 50  0001 C CNN
+F 4 "TDK" H 1450 1900 60  0001 L CNN "Manufacturer"
+F 5 "C1608X5R1V475M080AC" H 1450 1800 60  0001 L CNN "MPN"
+F 6 "4u7" H 950 1450 50  0000 L CNN "Val"
+	1    1250 1500
 	1    0    0    -1  
 $EndComp
-Text Label 1650 1400 1    50   ~ 0
+Text Label 1250 1350 1    50   ~ 0
 VDD2
-Text Label 1950 1400 1    50   ~ 0
+Text Label 1550 1350 1    50   ~ 0
 VDD1
 Wire Wire Line
-	1650 1400 1650 1200
+	1250 1350 1250 1150
 Wire Wire Line
-	1950 1400 1950 1200
+	1550 1350 1550 1150
 $Comp
 L quickfeather-board:GND #PWR013
 U 1 1 5DE4BFB6
-P 1650 1700
-F 0 "#PWR013" H 1650 1450 50  0001 C CNN
-F 1 "GND" H 1655 1527 50  0000 C CNN
-F 2 "" H 1650 1700 50  0001 C CNN
-F 3 "" H 1650 1700 50  0001 C CNN
-	1    1650 1700
+P 1250 1650
+F 0 "#PWR013" H 1250 1400 50  0001 C CNN
+F 1 "GND" H 1255 1477 50  0000 C CNN
+F 2 "" H 1250 1650 50  0001 C CNN
+F 3 "" H 1250 1650 50  0001 C CNN
+	1    1250 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L quickfeather-board:GND #PWR014
 U 1 1 5DE4C55A
-P 1950 1700
-F 0 "#PWR014" H 1950 1450 50  0001 C CNN
-F 1 "GND" H 1955 1527 50  0000 C CNN
-F 2 "" H 1950 1700 50  0001 C CNN
-F 3 "" H 1950 1700 50  0001 C CNN
-	1    1950 1700
+P 1550 1650
+F 0 "#PWR014" H 1550 1400 50  0001 C CNN
+F 1 "GND" H 1555 1477 50  0000 C CNN
+F 2 "" H 1550 1650 50  0001 C CNN
+F 3 "" H 1550 1650 50  0001 C CNN
+	1    1550 1650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2720,7 +2720,7 @@ F 2 "quickfeather-board-footprints:0402-res" H 13950 3200 60  0001 L CNN
 F 3 "" H 13750 3000 50  0001 C CNN
 F 4 "VISHAY" H 13950 3400 60  0001 L CNN "Manufacturer"
 F 5 "CRCW040222R0FKED" H 13950 3300 60  0001 L CNN "MPN"
-F 6 "22R" H 13550 3050 50  0000 C CNN "Val"
+F 6 "22R" H 13750 3000 50  0000 C CNN "Val"
 	1    13750 3000
 	1    0    0    -1  
 $EndComp
@@ -2734,7 +2734,7 @@ F 2 "quickfeather-board-footprints:0402-res" H 13950 3300 60  0001 L CNN
 F 3 "" H 13750 3100 50  0001 C CNN
 F 4 "VISHAY" H 13950 3500 60  0001 L CNN "Manufacturer"
 F 5 "CRCW040222R0FKED" H 13950 3400 60  0001 L CNN "MPN"
-F 6 "22R" H 13550 3150 50  0000 C CNN "Val"
+F 6 "22R" H 13750 3100 50  0000 C CNN "Val"
 	1    13750 3100
 	1    0    0    -1  
 $EndComp
@@ -3086,37 +3086,37 @@ Wire Wire Line
 Wire Wire Line
 	7550 2250 7900 2250
 Wire Wire Line
-	2850 2250 2950 2250
+	2650 2250 2950 2250
 $Comp
 L quickfeather-board:TP_SMD1MM TP2
 U 1 1 5DC6A90F
-P 2750 2250
-F 0 "TP2" V 2750 2150 50  0000 C CNN
-F 1 "TP_SMD1MM" H 2750 2150 50  0001 C CNN
-F 2 "quickfeather-board-footprints:Testpoint_smd_1mm" H 2950 2450 60  0001 L CNN
-F 3 "" H 2950 2550 60  0001 L CNN
-F 4 "N/A" H 0   0   50  0001 C CNN "MPN"
-F 5 "N/A" H 0   0   50  0001 C CNN "Manufacturer"
-	1    2750 2250
+P 2550 2250
+F 0 "TP2" V 2550 2150 50  0000 C CNN
+F 1 "TP_SMD1MM" H 2550 2150 50  0001 C CNN
+F 2 "quickfeather-board-footprints:Testpoint_smd_1mm" H 2750 2450 60  0001 L CNN
+F 3 "" H 2750 2550 60  0001 L CNN
+F 4 "N/A" H -200 0   50  0001 C CNN "MPN"
+F 5 "N/A" H -200 0   50  0001 C CNN "Manufacturer"
+	1    2550 2250
 	0    1    1    0   
 $EndComp
-Text Label 2850 2250 0    50   ~ 0
+Text Label 2700 2250 0    50   ~ 0
 VDD2
-Text Label 2850 2150 0    50   ~ 0
+Text Label 2700 2150 0    50   ~ 0
 VDD1
 Wire Wire Line
-	2950 2150 2850 2150
+	2950 2150 2650 2150
 $Comp
 L quickfeather-board:TP_SMD1MM TP1
 U 1 1 5DC6A7F5
-P 2750 2150
-F 0 "TP1" V 2750 2050 50  0000 C CNN
-F 1 "TP_SMD1MM" H 2750 2050 50  0001 C CNN
-F 2 "quickfeather-board-footprints:Testpoint_smd_1mm" H 2950 2350 60  0001 L CNN
-F 3 "" H 2950 2450 60  0001 L CNN
-F 4 "N/A" H 0   0   50  0001 C CNN "MPN"
-F 5 "N/A" H 0   0   50  0001 C CNN "Manufacturer"
-	1    2750 2150
+P 2550 2150
+F 0 "TP1" V 2550 2050 50  0000 C CNN
+F 1 "TP_SMD1MM" H 2550 2050 50  0001 C CNN
+F 2 "quickfeather-board-footprints:Testpoint_smd_1mm" H 2750 2350 60  0001 L CNN
+F 3 "" H 2750 2450 60  0001 L CNN
+F 4 "N/A" H -200 0   50  0001 C CNN "MPN"
+F 5 "N/A" H -200 0   50  0001 C CNN "Manufacturer"
+	1    2550 2150
 	0    1    1    0   
 $EndComp
 $Comp
@@ -3611,7 +3611,7 @@ F 2 "quickfeather-board-footprints:0402-res" H 14050 5150 60  0001 L CNN
 F 3 "" H 13850 4950 50  0001 C CNN
 F 4 "VISHAY" H 14050 5350 60  0001 L CNN "Manufacturer"
 F 5 "CRCW040222R0FKED" H 14050 5250 60  0001 L CNN "MPN"
-F 6 "22R" H 14000 5000 50  0000 C CNN "Val"
+F 6 "22R" H 13850 4950 50  0000 C CNN "Val"
 	1    13850 4950
 	-1   0    0    -1  
 $EndComp
@@ -3625,7 +3625,7 @@ F 2 "quickfeather-board-footprints:0402-res" H 14050 5050 60  0001 L CNN
 F 3 "" H 13850 4850 50  0001 C CNN
 F 4 "VISHAY" H 14050 5250 60  0001 L CNN "Manufacturer"
 F 5 "CRCW040222R0FKED" H 14050 5150 60  0001 L CNN "MPN"
-F 6 "22R" H 14000 4900 50  0000 C CNN "Val"
+F 6 "22R" H 13850 4850 50  0000 C CNN "Val"
 	1    13850 4850
 	-1   0    0    -1  
 $EndComp
@@ -3639,7 +3639,7 @@ F 2 "quickfeather-board-footprints:0402-res" H 14050 4950 60  0001 L CNN
 F 3 "" H 13850 4750 50  0001 C CNN
 F 4 "VISHAY" H 14050 5150 60  0001 L CNN "Manufacturer"
 F 5 "CRCW040222R0FKED" H 14050 5050 60  0001 L CNN "MPN"
-F 6 "22R" H 14000 4800 50  0000 C CNN "Val"
+F 6 "22R" H 13850 4750 50  0000 C CNN "Val"
 	1    13850 4750
 	-1   0    0    -1  
 $EndComp
