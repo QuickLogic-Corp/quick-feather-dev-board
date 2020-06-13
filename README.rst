@@ -12,6 +12,10 @@ The design files were created by `Antmicro <https://www.antmicro.com>`_ in coope
 The board has been designed to keep compatibility with the `Adafruit Feather <https://learn.adafruit.com/adafruit-feather/feather-specification>`_ ecosystem of evaluation boards.
 This allows the user to explore functionalities of the EOS S3 platform.
 
+Getting Started
+---------------
+The  `QuickFeather_UserGuide <https://github.com/QuickLogic-Corp/quick-feather-dev-board/blob/master/doc/QuickFeather_UserGuide.pdf>`_ contains instructions for running the pre-installed example program.
+
 Key features
 ------------
 
