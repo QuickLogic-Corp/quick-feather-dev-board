@@ -44,3 +44,31 @@ Simulation
 
 The board is supported in `Renode <https://renode.io/>`_, the open source simulation framework by Antmicro - you can run a virtual copy of this hardware for software development purposes on your PC. A link to the relevant demo script is provided in Renode's `supported boards section <https://renode.readthedocs.io/en/latest/introduction/supported-boards.html>`_.
 
+
+Basic Usage
+=====================
+
+Simple
+----------
+
+Connect the micro-usb port of the board to the PC, which will both provide power to the board as well as offer a virtual USB-CDC UART port out of the box.
+
+Advanced
+----------
+
+For using the board with advanced scenarios, such as loading a custom FPGA image, an additional dedicated USB-UART board (for example based on the PL2303, FT232 etc.) needs to be connected to the QuickFeather UART pins, as shown below:
+::
+
+      +--------------------------+         +--------------+  
+      | QF UART RX(IO_45) [J3.3] +-------->+ USB-UART TX  |  
+      |                          |         |              |  
+      |                          |         |              |  
+      | QF UART TX(IO_44) [J3.2] +-------->+ USB-UART RX  |  
+      |                          |         |              |  
+      |                          |         |              |  
+      | QF GND      (GND) [J3.1] +-------->+ USB-UART GND |  
+      +--------------------------+         +--------------+  
+
+
+
+Refer to `QuickFeather_UserGuide <https://github.com/QuickLogic-Corp/quick-feather-dev-board/blob/master/doc/QuickFeather_UserGuide.pdf>`_ for further details
